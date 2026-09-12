@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Kumar | Portfolio</title>
+<meta name="description" content="Portfolio of Abhishek Kumar — Computer Science and Business Systems student, software developer and AI enthusiast.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+:root{--bg:#070b14;--surface:#0d1320;--surface2:#111a2b;--text:#f6f8fc;--muted:#a8b2c4;--accent:#7c5cff;--accent2:#20d6c7;--border:rgba(255,255,255,.09)}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+a{text-decoration:none;color:inherit}.wrap{width:min(1120px,90%);margin:auto}
+header{position:fixed;top:0;width:100%;z-index:50;background:rgba(7,11,20,.75);backdrop-filter:blur(15px);border-bottom:1px solid var(--border)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:1.35rem;font-weight:800}.logo i{font-style:normal;color:var(--accent)}
+nav ul{display:flex;gap:28px;list-style:none;color:var(--muted);font-size:.92rem}nav li a:hover{color:#fff}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:72px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:#6246ff22;filter:blur(90px);right:-130px;top:80px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}
+.eyebrow{color:var(--accent2);font-weight:700;letter-spacing:1px;margin-bottom:18px}
+h1{font-size:clamp(3.2rem,7vw,6.2rem);line-height:.95;letter-spacing:-.065em;margin-bottom:25px}
+.gradient{background:linear-gradient(90deg,#9a82ff,#40e4d4);-webkit-background-clip:text;color:transparent}
+.hero-text{font-size:1.08rem;color:var(--muted);max-width:650px;margin-bottom:30px}
+.actions{display:flex;gap:13px;flex-wrap:wrap}.btn{padding:12px 19px;border-radius:10px;border:1px solid var(--border);font-weight:700;transition:.2s}.btn:hover{transform:translateY(-3px)}.primary{background:#fff;color:#080b13;border-color:#fff}
+.avatar{height:330px;width:330px;margin:auto;border-radius:32% 68% 57% 43%/46% 38% 62% 54%;background:linear-gradient(145deg,#171e34,#0c111c);border:1px solid #303a55;display:flex;align-items:center;justify-content:center;box-shadow:0 35px 100px #0008;animation:float 5s ease-in-out infinite}
+.avatar span{font-size:6.5rem;font-weight:800;color:#fff}.avatar small{position:absolute;margin-top:145px;color:var(--accent2);font-weight:700}
+@keyframes float{50%{transform:translateY(-10px)}}
+section{padding:100px 0}.section-head{margin-bottom:38px}.kicker{color:var(--accent);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:2px}.section-head h2{font-size:2.5rem;letter-spacing:-.04em;margin:6px 0}.section-head p{color:var(--muted)}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px}.big-stat{font-size:5rem;font-weight:800;line-height:1;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;color:transparent}.about-card,.card{background:linear-gradient(145deg,var(--surface),#0a101b);border:1px solid var(--border);border-radius:20px;padding:28px}.about-card p{color:var(--muted);margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{transition:.25s}.card:hover{transform:translateY(-6px);border-color:#ffffff25}.card h3{margin-bottom:10px}.card p{color:var(--muted);font-size:.94rem}.icon{font-size:1.5rem;margin-bottom:15px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.tag{font-size:.78rem;padding:6px 9px;border-radius:7px;background:var(--surface2);color:#cbd5e7}
+.project{min-height:270px;display:flex;flex-direction:column}.project .link{margin-top:auto;color:var(--accent2);font-weight:700;padding-top:22px}
+.timeline{max-width:800px}.timeline-item{position:relative;padding:0 0 32px 30px;border-left:1px solid #2b3850}.timeline-item:last-child{border-left-color:transparent}.dot{position:absolute;left:-5px;top:3px;width:9px;height:9px;border-radius:50%;background:var(--accent)}.date{color:var(--accent2);font-size:.8rem;font-weight:700}.timeline-item h3{margin:5px 0}.timeline-item p{color:var(--muted)}
+.contact-box{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:42px;border:1px solid var(--border);border-radius:24px;background:linear-gradient(120deg,#111a2b,#0b101a)}.contact-box p{color:var(--muted);max-width:650px}
+footer{padding:30px 0;border-top:1px solid var(--border);color:var(--muted);text-align:center;font-size:.85rem}
+@media(max-width:850px){nav ul{display:none}.hero-grid,.about{grid-template-columns:1fr}.avatar{width:230px;height:230px}.avatar span{font-size:4.5rem}.avatar small{margin-top:105px}.grid{grid-template-columns:1fr 1fr}.contact-box{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){h1{font-size:3.4rem}section{padding:75px 0}.grid{grid-template-columns:1fr}.about{gap:25px}.big-stat{font-size:4rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#">Abhishek<span style="color:var(--accent)">.</span></a>
+<ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#journey">Journey</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav></div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<div class="eyebrow">Computer Science • AI • Builder</div>
+<h1>Hi, I'm <span class="gradient">Abhishek Kumar.</span></h1>
+<p class="hero-text">A B.Tech Computer Science and Business Systems student who loves building digital products, exploring AI, and turning real-world problems into practical solutions.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore my work</a><a class="btn" href="mailto:yabhishek1040@gmail.com">Get in touch</a></div>
+</div>
+<div class="avatar"><span>AK</span><small>Developer & AI Enthusiast</small></div>
+</div></section>
+
+<section id="about"><div class="wrap"><div class="section-head"><span class="kicker">About me</span><h2>Learning. Building. Improving.</h2></div>
+<div class="about"><div><div class="big-stat">8.31</div><p style="color:var(--muted);margin-top:8px">CGPA through second semester</p></div>
+<div class="about-card"><p>I'm pursuing B.Tech in Computer Science and Business Systems, graduating in 2029. I enjoy software development, AI, problem solving and creating products with a strong focus on user experience.</p><p>Beyond academics, I actively work on projects and community initiatives. My experience as a Google Gemini Student Ambassador has helped me grow as a communicator, presenter and technology enthusiast.</p></div></div>
+</div></section>
+
+<section id="skills"><div class="wrap"><div class="section-head"><span class="kicker">What I work with</span><h2>Skills & interests</h2><p>My current toolkit and areas I’m exploring.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">⌘</div><h3>Programming & DSA</h3><p>Building strong fundamentals through problem solving and algorithmic thinking.</p><div class="tags"><span class="tag">C</span><span class="tag">C++</span><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">DSA</span></div></div>
+<div class="card"><div class="icon">◈</div><h3>Web Development</h3><p>Creating responsive interfaces and practical full-stack web experiences.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span><span class="tag">React</span><span class="tag">Full Stack</span></div></div>
+<div class="card"><div class="icon">✦</div><h3>AI & GenAI</h3><p>Exploring generative AI, AI APIs and intelligent workflows for real products.</p><div class="tags"><span class="tag">Gemini</span><span class="tag">GenAI</span><span class="tag">AI APIs</span><span class="tag">Prompting</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap"><div class="section-head"><span class="kicker">Featured work</span><h2>Projects</h2><p>Products and experiments built around real-world use cases.</p></div>
+<div class="grid">
+<div class="card project"><div class="icon">◉</div><h3>CrediBridge</h3><p>A digital platform concept focused on connecting borrowers and lenders through a streamlined, user-friendly experience.</p><a class="link" href="https://credibridge.vercel.app/" target="_blank">View live project ↗</a></div>
+<div class="card project"><div class="icon">◌</div><h3>Udyam Setu</h3><p>A web platform concept designed to make useful services and information more accessible to entrepreneurs and small businesses.</p><span class="link">Web project</span></div>
+<div class="card project"><div class="icon">✦</div><h3>AI Experiments</h3><p>Exploring AI-assisted workflows for productivity, content creation, learning and student-focused problem solving.</p><span class="link">AI / GenAI</span></div>
+</div></div></section>
+
+<section id="journey"><div class="wrap"><div class="section-head"><span class="kicker">My journey</span><h2>Highlights</h2></div>
+<div class="timeline">
+<div class="timeline-item"><span class="dot"></span><span class="date">2026</span><h3>Google Gemini Student Ambassador</h3><p>Representing Gemini through student-focused activities, events and AI awareness initiatives.</p></div>
+<div class="timeline-item"><span class="dot"></span><span class="date">Academic</span><h3>Strong academic foundation</h3><p>Maintaining an 8.31 CGPA through second semester and recognized among the top 10 scorers in class.</p></div>
+<div class="timeline-item"><span class="dot"></span><span class="date">Achievement</span><h3>Best English Speaker</h3><p>Recognized for communication skills and continuing to develop public speaking and presentation abilities.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="contact-box"><div><span class="kicker">Let’s connect</span><h2 style="font-size:2.2rem;margin:6px 0 10px">Have an idea?</h2><p>I'm always interested in projects, collaborations, communities and opportunities where technology can create meaningful impact.</p></div><div class="actions"><a class="btn primary" href="mailto:yabhishek1040@gmail.com">Email me</a><a class="btn" href="https://credibridge.vercel.app/" target="_blank">See my work</a></div></div></div></section>
+</main>
+<footer>© 2026 Abhishek Kumar · Built with curiosity, code & AI.</footer>
+</body></html>
